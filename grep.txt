@@ -1,0 +1,12 @@
+EJEMPLOS DE USO DE GREP:
+
+1. Para buscar palabras en una ruta especifica. Distingue entre mayusculas y minusculas: grep <word> <route>
+    Ejemplo: grep python /usr/share/dict/words
+2. Para buscar palabras en una ruta especifica sin importar mayuscuals o minusculas: grep -i <word> <route>
+    Ejemplo: grep -i python /usr/share/dict/words
+3. Para buscar palabras usando un "comodin": grep <word>.<word> <route>
+    Ejemplo: grep l.rts /usr/share/dict/words   -   Devuelve: alerts, blurts, flirts.
+4. Para buscar lineas que empiecen de una forma especifica: grep ^<word/line> <route>
+    Ejemplo: grep ^fruit /usr/share/dict/words   -   Devuelve: fruit, fruit's, fruitcake, fruitful, etc.
+5. Para buscar lineas que terminan de una forma especifica: grep <word/line>$ <route>
+    Ejemplo: grep cat$ /usr/share/dict/words    -   Devuelve: Muscat, bobcat, cat, copycat, etc.
