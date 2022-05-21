@@ -1,5 +1,7 @@
 import re
 
+# Los grupos de captura se representan entre parentesis.
+
 # Busqueda de texto en el formato "Palabra, palabra"
 # \w coincide con letras, numeros y guiones bajos.
 result = re.search(r'^(\w*), (\w*)$', 'Lovelace, Ada')
